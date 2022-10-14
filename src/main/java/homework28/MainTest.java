@@ -18,12 +18,11 @@ package homework28;
 public class MainTest {
     public static void main(String[] args) throws CloneNotSupportedException {
 
-        User userOne = new User("Dima", "Jakar", 78);
-        User userTwo = new User("Kirill", "Fasbendar", 45);
-        User userThree = new User("Ira", "Panasonic", 21);
-
-        User userFour = new User("Julia", "Friskina", 1);
-        User userFive = new User("Julia", "Friskina", 30);
+        User userOne = new User("Dima", "Jakar", 1, new Address("Minsk"));
+        User userTwo = new User("Kirill", "Fasbendar", 2,new Address("Kirov"));
+        User userThree = new User("Ira", "Panasonic", 3, new Address("Brest"));
+        User userFour = new User("Julia", "Friskina", 4,new Address("Talin"));
+        User userFive = new User("Julia", "Friskina", 4, new Address("Talin"));
 
         System.out.printf("If different objects %s \nIf the same objects %s\n", userOne.equals(userTwo), userFour.equals(userFive));
         System.out.printf("The same objects with the same hasCode %s %s\n", userFour.hashCode(), userFive.hashCode());
@@ -34,6 +33,11 @@ public class MainTest {
         Integer two = Integer.valueOf(50);
         Integer Three = new Integer(50);
 
-        System.out.printf("Work Integer Pool  %s  %s  %s  %s",(one == two), (one.equals(two)), (one==Three), (one.equals(Three)));
+        System.out.printf("Work Integer Pool  %s  %s  %s  %s\n",(one == two), (one.equals(two)), (one==Three), (one.equals(Three)));
+
+        User userSix = User.cloneUser(3,"shallow");
+        User userSeven = User.cloneUser(1,"deep");
+
+        System.out.printf("shallow object cloning - %s \ndeep clone an object - %s\n", userSix, userSeven);
     }
 }
