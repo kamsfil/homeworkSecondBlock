@@ -18,26 +18,41 @@
  */
 package homework29;
 
+import homework29.classUtil.WeakHashMapUtil;
+import homework29.myLinkedList.MyLinkedList;
 import homework29.classUtil.WorkingCollectionsUtil;
 import homework29.userClasses.Document;
 import homework29.userClasses.User;
 
-import javax.management.ObjectName;
 import java.util.*;
 
 public class MainTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Map<String, Document> mapUsers = new HashMap<>();
         WorkingCollectionsUtil.countWriteMap("src/main/resources/numberPhone.txt", mapUsers);
         WorkingCollectionsUtil.outputMap(mapUsers);
-
+//--------------------------------------------------------------------------------------------------------------
         List<User> listUsers = new ArrayList();
         for (int i = 0; i < 999; i++) {
             listUsers.add(new User());
         }
-
         new User().sortReturnTenFirst(listUsers);
+//--------------------------------------------------------------------------------------------------------------
 
-        }
+        WeakHashMapUtil.testWHM();
+
+//--------------------------------------------------------------------------------------------------------------
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList<>();
+        myLinkedList.addAtFirst(10);
+        myLinkedList.addAtFirst(20);
+        myLinkedList.addAtFirst(30);
+        myLinkedList.addAtFirst(60);
+        myLinkedList.addAtLast(40);
+        myLinkedList.addAtLast(50);
+
+        System.out.println(myLinkedList.getObject(4));
+        myLinkedList.deleteObject(4);
+        System.out.println(myLinkedList.getObject(4));
     }
+}
