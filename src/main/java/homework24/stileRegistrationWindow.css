@@ -1,0 +1,37 @@
+.buttonNewProfile {
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    background: cornflowerblue;
+    color: aliceblue;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.buttonLogRegister{
+    appearance: none;
+    padding: 5px 16px;
+    font-size: 16px;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.iconSizes{
+    width: 12px;
+    height: 12px;
+}
+
+.gradient-progressbar{
+    width: 170px;
+    height: 15px;
+    border: 1px solid black;
+
+}
+
+progress::-webkit-progress-bar { background: white}
+progress::-webkit-progress-value { background: green }
+
+
+
+
+
