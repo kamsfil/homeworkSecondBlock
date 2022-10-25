@@ -15,6 +15,7 @@ public class DivisionNumbersTest {
             "-10,-5,2",
             "-25,7,-3.5709999",
             "32,40,0.8000001",
+            "-10,-5,2",
             "5,0,0",
             "0,5,0"
     }, ignoreLeadingAndTrailingWhitespace=true)

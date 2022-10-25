@@ -4,7 +4,7 @@ public final class DivisionNumbers {
 
     public static float division(float dividend /*ДЕЛИМОЕ*/, float divisor /*ДЕЛИТЕЛЬ*/) {
         if (divisor == 0) {
-            System.out.println("На ноль делить нельзя");
+            System.out.println("На '0' делить нельзя");
             return 0;
         }
         if (dividend == 0) {

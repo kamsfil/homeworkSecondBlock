@@ -12,6 +12,7 @@ public class MainTest {
         Item four = new Item("cabbage", 15);
         Item five = new Item("tomato", 35);
         Item six = new Item("orange", 60);
+        Item seven  = new Item("banana", 105);
 
         Order orderOne = new Order();
         Order orderTwo = new Order();

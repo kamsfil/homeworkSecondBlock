@@ -40,7 +40,7 @@ public final class OrderFillingUtil {
         int num = items.length;
 
         if (num < 1) {
-            OrderFilling.error("добавилось ноль товаров !!!");
+            OrderFilling.error("добавилось ноль товаров !!");
             return true;
         }
         if (num == 1) {

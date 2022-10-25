@@ -8,9 +8,7 @@ public class MainTest {
         float b = DivisionNumbers.division(-10.0f,-5.0f);
         float c = DivisionNumbers.division(-25.0f,7.0f);
         float d = DivisionNumbers.division(32.0f,40.0f);
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
-        System.out.println(d);
+        float e = DivisionNumbers.division(40.0f,40.0f);
+        System.out.printf("%s  %s  %s  %s  %s ",a,b,c,d,e);
     }
 }

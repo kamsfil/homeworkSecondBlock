@@ -17,8 +17,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
-                "itemList=" + itemList +
-                '}';
+        return "Order " +
+                "itemList= " + itemList;
     }
 }
