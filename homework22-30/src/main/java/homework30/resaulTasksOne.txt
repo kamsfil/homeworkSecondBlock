@@ -1,0 +1,43 @@
+"C:\Users\Lord Vader\.jdks\openjdk-18.0.2.1\bin\java.exe" "-Dmaven.multiModuleProjectDirectory=C:\Users\Lord Vader\demoMaven" "-Dmaven.home=C:\Program Files\JetBrains\IntelliJ IDEA 2022.1.2\plugins\maven\lib\maven3" "-Dclassworlds.conf=C:\Program Files\JetBrains\IntelliJ IDEA 2022.1.2\plugins\maven\lib\maven3\bin\m2.conf" "-Dmaven.ext.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2022.1.2\plugins\maven\lib\maven-event-listener.jar" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2022.1.2\lib\idea_rt.jar=56271:C:\Program Files\JetBrains\IntelliJ IDEA 2022.1.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA 2022.1.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2022.1.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license" org.codehaus.classworlds.Launcher -Didea.version=2022.1.4 install
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ---------------------< by.tms.kaminski:demoMaven >----------------------
+[INFO] Building demoMaven Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ demoMaven ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Lord Vader\demoMaven\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ demoMaven ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ demoMaven ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Lord Vader\demoMaven\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ demoMaven ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ demoMaven ---
+[INFO] No tests to run.
+[INFO]
+[INFO] --- maven-war-plugin:3.2.2:war (default-war) @ demoMaven ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [demoMaven] in [C:\Users\Lord Vader\demoMaven\target\demoMaven]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\Lord Vader\demoMaven\src\main\webapp]
+[INFO] Webapp assembled in [18 msecs]
+[INFO] Building war: C:\Users\Lord Vader\demoMaven\target\demoMaven.war
+[INFO]
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ demoMaven ---
+[INFO] Installing C:\Users\Lord Vader\demoMaven\target\demoMaven.war to C:\Users\Lord Vader\.m2\repository\by\tms\kaminski\demoMaven\1.0-SNAPSHOT\demoMaven-1.0-SNAPSHOT.war
+[INFO] Installing C:\Users\Lord Vader\demoMaven\pom.xml to C:\Users\Lord Vader\.m2\repository\by\tms\kaminski\demoMaven\1.0-SNAPSHOT\demoMaven-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.682 s
+[INFO] Finished at: 2022-10-20T20:11:48+03:00
+[INFO] ------------------------------------------------------------------------
+
+Process finished with exit code 0
