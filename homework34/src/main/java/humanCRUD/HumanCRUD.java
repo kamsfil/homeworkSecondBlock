@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @Slf4j
@@ -25,9 +26,26 @@ public class HumanCRUD extends UtilSQL {
         }
     }
 
-    public static void humanRead(Connection connection,String first_name,String last_name,Integer age,Integer property_id, Integer id) {
+    public static void humanRead (Connection connection, Integer id) {
         try {
             PreparedStatement prStatement = connection.prepareStatement(READ_HUMAN);
+            prStatement.setInt(1,id);
+            ResultSet resultSet = prStatement.executeQuery();
+            while (resultSet.next()){
+                log.info("Human, first name = {}, last name = {}, age = {}",
+                        resultSet.getString("first_name"),
+                        resultSet.getString("last_name"),
+                        resultSet.getInt("age")
+                );
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void humanUpdate(Connection connection,String first_name,String last_name,Integer age,Integer property_id, Integer id) {
+        try {
+            PreparedStatement prStatement = connection.prepareStatement(UPDATE_HUMAN);
             prStatement.setString(1, first_name);
             prStatement.setString(2, last_name);
             prStatement.setInt(3, age);
