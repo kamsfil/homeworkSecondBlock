@@ -31,9 +31,10 @@ public class MainTest {
 
         Integer one = Integer.valueOf(50);
         Integer two = Integer.valueOf(50);
-        Integer Three = new Integer(50);
+        Integer Three = Integer.valueOf(50);
+//        Integer Three = new Integer(50);
 
-        System.out.printf("Work Integer Pool  %s  %s  %s  %s\n",(one == two), (one.equals(two)), (one==Three), (one.equals(Three)));
+        System.out.printf("Work Integer Pool  %s  %s  %s  %s\n",(one == Three), (one.equals(Three)), (one==Three), (one.equals(Three)));
 
         User userSix = User.cloneUser(3,"shallow");
         User userSeven = User.cloneUser(1,"deep");
